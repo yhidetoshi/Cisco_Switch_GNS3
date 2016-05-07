@@ -23,6 +23,7 @@ Ciscoコマンドメモ　
 |# show startup-config|設定変更してから設定保存されたコンフィグ確認|
 |# sh running-config|コンフィグ確認|
 |# copy running-config startup-config もしくは write memory|コンフィグ保存|
+|# write memory もしくは wr|設定保存|
 |(config)#username <user_name> password <password>|ユーザとパスワード作成|
 
 
