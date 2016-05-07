@@ -19,6 +19,8 @@ Ciscoコマンドメモ　
 |# show startup-config|設定変更してから設定保存されたコンフィグ確認|
 |# sh running-config|コンフィグ確認|
 |# copy running-config startup-config もしくは write memory|コンフィグ保存|
+|(config)#username <user_name> password <password>|ユーザとパスワード作成|
+
 
 
 |# ?|可能なコマンド表示|
@@ -30,5 +32,13 @@ Ciscoコマンドメモ　
 (config)# interface FastEthernet 0/0
 (config-if)# ip address 10.0.2.11 255.255.255.0
 (config-if)# no shutdown
+```
+
+- ssh接続できるようにする
+```
+(config)# username cisco password cisco
+(config-line)# line vty 0 4
+(config-line)# login local
+(config)#ip ssh version 2
 ```
 
