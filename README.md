@@ -47,3 +47,25 @@ Ciscoコマンドメモ　
 (config)#ip ssh version 2
 ```
 
+#### 色々と試してみる
+- vlan-trunk
+
+![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Cisco_Switch_GNS3/vlan-trunk-test.png)
+
+```
+(trunkポート有り)
+R1#ping 192.168.1.11
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.1.11, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 36/72/112 ms
+
+(trunkポート無し)
+R1#ping 192.168.1.11
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.1.11, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+```
