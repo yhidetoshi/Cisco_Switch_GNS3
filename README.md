@@ -16,6 +16,7 @@ Ciscoコマンドメモ　
 |# configure terminal|グローバルコンフィギュレーションモードへ|
 |# exit|一つ前のモードへ|
 |# enable|特権EXECへ移動|
+|# ?|ヘルプコマンド|
 |# show startup-config|設定変更してから設定保存されたコンフィグ確認|
 |# sh running-config|コンフィグ確認|
 |# copy running-config startup-config もしくは write memory|コンフィグ保存|
